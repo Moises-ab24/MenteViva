@@ -1,0 +1,29 @@
+.intro {
+  padding-block: var(--space-6);
+  background: var(--bg-paper);
+  border-bottom: var(--line-width) solid var(--line);
+}
+
+.contenido {
+  max-width: 760px;
+}
+
+.tag {
+  margin-bottom: var(--space-3);
+}
+
+.parrafo {
+  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: var(--space-3);
+}
+
+.parrafo:last-child {
+  margin-bottom: 0;
+}
+
+.parrafo :global(.brutal-marker) {
+  color: var(--ink);
+  font-weight: 600;
+}

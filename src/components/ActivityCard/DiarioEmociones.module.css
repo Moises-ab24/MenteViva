@@ -1,0 +1,128 @@
+.diario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.paso {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  margin-top: var(--space-2);
+}
+
+.paso:first-child {
+  margin-top: 0;
+}
+
+.emociones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.chip {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5em 0.9em;
+  background: var(--bg-paper);
+  border: 2.5px solid var(--line);
+  transition: transform var(--dur-fast) var(--ease-out-quart),
+    background var(--dur-fast) var(--ease-out-quart);
+}
+
+.chip:hover {
+  transform: translateY(-2px);
+}
+
+.chipActivo {
+  background: var(--green-300);
+  box-shadow: 3px 3px 0 0 var(--line);
+  transform: translate(-1px, -1px);
+}
+
+.textarea {
+  margin-top: 0.5em;
+  width: 100%;
+  padding: 0.75em;
+  border: 2.5px solid var(--line);
+  background: var(--bg-paper);
+  font-family: inherit;
+  font-size: 1.05rem;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.textarea:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--green-300);
+}
+
+.error {
+  color: var(--coral-700);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 0.4em;
+}
+
+.guardar {
+  align-self: flex-start;
+  margin-top: var(--space-2);
+  padding: 0.7em 1.4em;
+  background: var(--green-500);
+  color: var(--bg-paper-raised);
+  border: 2.5px solid var(--line);
+  font-weight: 700;
+  box-shadow: 3px 3px 0 0 var(--line);
+  transition: transform var(--dur-fast) var(--ease-out-quart),
+    box-shadow var(--dur-fast) var(--ease-out-quart);
+}
+
+.guardar:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 0 var(--line);
+}
+
+.guardar:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 0 var(--line);
+}
+
+.historial {
+  margin-top: var(--space-3);
+  padding-top: var(--space-2);
+  border-top: 2px dashed var(--line);
+}
+
+.historialTitulo {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 0.6em;
+}
+
+.entrada {
+  background: var(--bg-paper);
+  border: 2px solid var(--line);
+  padding: 0.6em 0.9em;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+}
+
+.entradaEmocion {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--green-700);
+}
+
+.entradaTexto {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  margin-top: 0.2em;
+}

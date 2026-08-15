@@ -1,0 +1,46 @@
+.cierre {
+  padding-block: var(--space-6);
+  background: var(--ink);
+  color: var(--bg-paper);
+}
+
+.cierre :global(.brutal-tag) {
+  background: var(--green-500);
+  color: var(--ink);
+  border-color: var(--bg-paper);
+}
+
+.contenido {
+  max-width: 760px;
+}
+
+.parrafo {
+  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  line-height: 1.6;
+  margin-top: var(--space-3);
+  color: var(--bg-paper);
+  opacity: 0.92;
+}
+
+.boton {
+  margin-top: var(--space-4);
+  padding: 0.8em 1.6em;
+  background: var(--amber-300);
+  color: var(--ink);
+  border: 3px solid var(--bg-paper);
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 5px 5px 0 0 var(--bg-paper);
+  transition: transform var(--dur-base) var(--ease-out-quart),
+    box-shadow var(--dur-base) var(--ease-out-quart);
+}
+
+.boton:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 0 var(--bg-paper);
+}
+
+.boton:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 0 var(--bg-paper);
+}

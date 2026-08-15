@@ -1,0 +1,109 @@
+.test {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.progreso {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin-bottom: var(--space-2);
+}
+
+.barra {
+  height: 8px;
+  border: 2px solid var(--line);
+  background: var(--bg-paper);
+  overflow: hidden;
+}
+
+.barraLlena {
+  height: 100%;
+  background: var(--lav-500);
+}
+
+.pregunta {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.4;
+  min-height: 3.4em;
+}
+
+.opciones {
+  display: flex;
+  gap: 0.7em;
+  margin-top: var(--space-2);
+}
+
+.opcion {
+  flex: 1;
+  padding: 0.7em;
+  background: var(--bg-paper-raised);
+  border: 2.5px solid var(--line);
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: transform var(--dur-fast) var(--ease-out-quart),
+    background var(--dur-fast) var(--ease-out-quart);
+}
+
+.opcion:hover {
+  background: var(--lav-300);
+  transform: translateY(-2px);
+}
+
+.opcion:active {
+  transform: translateY(1px);
+}
+
+.resultado {
+  text-align: center;
+  padding-top: var(--space-1);
+}
+
+.resultadoBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 84px;
+  border: 3px solid var(--line);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 auto var(--space-2);
+  box-shadow: 4px 4px 0 0 var(--line);
+}
+
+.resultadoNivel {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+}
+
+.resultadoTexto {
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 42ch;
+  margin: 0 auto;
+}
+
+.reiniciar {
+  margin-top: var(--space-3);
+  padding: 0.6em 1.3em;
+  background: var(--bg-paper-raised);
+  border: 2.5px solid var(--line);
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 3px 3px 0 0 var(--line);
+  transition: transform var(--dur-fast) var(--ease-out-quart);
+}
+
+.reiniciar:hover {
+  transform: translate(-2px, -2px);
+}

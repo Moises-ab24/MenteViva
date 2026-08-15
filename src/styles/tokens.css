@@ -1,0 +1,121 @@
+:root {
+  /* ---- Superficie base ---- */
+  --bg-paper: oklch(96.5% 0.015 95);
+  --bg-paper-raised: oklch(99% 0.006 95);
+  --ink: oklch(18% 0.02 260);
+  --ink-soft: oklch(32% 0.02 260);
+
+  /* ---- Verde: sanación, equilibrio (color ancla del proyecto) ---- */
+  --green-50: oklch(94% 0.05 155);
+  --green-300: oklch(78% 0.13 155);
+  --green-500: oklch(58% 0.15 155);
+  --green-700: oklch(38% 0.12 155);
+  --green-900: oklch(22% 0.08 155);
+
+  /* ---- Celeste: calma, concentración ---- */
+  --blue-50: oklch(94% 0.035 235);
+  --blue-300: oklch(78% 0.09 235);
+  --blue-500: oklch(62% 0.13 235);
+  --blue-700: oklch(42% 0.12 235);
+
+  /* ---- Lavanda: contención, ternura ---- */
+  --lav-50: oklch(94% 0.03 305);
+  --lav-300: oklch(80% 0.08 305);
+  --lav-500: oklch(64% 0.12 305);
+  --lav-700: oklch(44% 0.13 305);
+
+  /* ---- Naranja: energía, alerta suave (uso moderado) ---- */
+  --amber-300: oklch(82% 0.13 70);
+  --amber-500: oklch(72% 0.16 55);
+  --amber-700: oklch(50% 0.15 45);
+
+  /* ---- Coral: acentos puntuales, nunca dominante ---- */
+  --coral-500: oklch(62% 0.18 25);
+  --coral-700: oklch(46% 0.16 20);
+
+  --line: var(--ink);
+  --line-width: 3px;
+  --shadow-offset: 6px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Space Grotesk", "Arial", sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6rem;
+  --space-7: 9rem;
+
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 180ms;
+  --dur-base: 320ms;
+  --dur-slow: 560ms;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--green-500);
+  color: var(--bg-paper-raised);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

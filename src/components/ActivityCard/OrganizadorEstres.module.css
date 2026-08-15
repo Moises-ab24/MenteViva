@@ -1,0 +1,118 @@
+.organizador {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.formulario {
+  display: grid;
+  gap: 0.5em;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 0.65em 0.8em;
+  border: 2.5px solid var(--line);
+  background: var(--bg-paper);
+  font-family: inherit;
+  font-size: 1.05rem;
+}
+
+.input:focus-visible,
+.select:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--blue-300);
+}
+
+.agregar {
+  padding: 0.65em 1.2em;
+  background: var(--blue-500);
+  color: var(--bg-paper-raised);
+  border: 2.5px solid var(--line);
+  font-weight: 700;
+  box-shadow: 3px 3px 0 0 var(--line);
+  transition: transform var(--dur-fast) var(--ease-out-quart);
+}
+
+.agregar:hover {
+  transform: translate(-2px, -2px);
+}
+
+.agregar:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 0 var(--line);
+}
+
+.error {
+  color: var(--coral-700);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.matriz {
+  display: grid;
+  gap: 0.7em;
+}
+
+.cuadrante {
+  border: 2.5px solid var(--line);
+  padding: 0.8em;
+  min-height: 90px;
+}
+
+.hacer {
+  background: color-mix(in oklch, var(--coral-500) 18%, var(--bg-paper));
+}
+
+.agendar {
+  background: color-mix(in oklch, var(--green-500) 20%, var(--bg-paper));
+}
+
+.delegar {
+  background: color-mix(in oklch, var(--amber-500) 22%, var(--bg-paper));
+}
+
+.eliminar {
+  background: color-mix(in oklch, var(--ink) 8%, var(--bg-paper));
+}
+
+.cuadranteTitulo {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.cuadranteAyuda {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 0.5em;
+}
+
+.tarea {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--bg-paper-raised);
+  border: 2px solid var(--line);
+  padding: 0.5em 0.7em;
+  font-size: 0.95rem;
+  margin-bottom: 0.4em;
+  transition: transform var(--dur-fast) var(--ease-out-quart);
+}
+
+.tarea:hover {
+  transform: translateX(3px);
+  text-decoration: line-through;
+}
+
+@media (min-width: 560px) {
+  .formulario {
+    grid-template-columns: 1fr auto auto;
+  }
+
+  .matriz {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,154 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: var(--space-5);
+  background: var(--green-50);
+  border-bottom: var(--line-width) solid var(--line);
+  overflow: clip;
+}
+
+.grano {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: radial-gradient(var(--line) 0.6px, transparent 0.6px);
+  background-size: 14px 14px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 80% 20%, black, transparent);
+  mask-image: radial-gradient(ellipse 70% 60% at 80% 20%, black, transparent);
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--green-700);
+  margin-bottom: var(--space-2);
+}
+
+.titulo {
+  font-size: clamp(3.2rem, 15vw, 6rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.tituloAcento {
+  color: var(--green-500);
+  -webkit-text-stroke: 2px var(--line);
+  text-stroke: 2px var(--line);
+}
+
+.bajada {
+  margin-top: var(--space-3);
+  max-width: 34ch;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.ficha {
+  margin-top: var(--space-4);
+  background: var(--bg-paper-raised);
+  border: var(--line-width) solid var(--line);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 0 var(--line);
+  padding: var(--space-3);
+  max-width: 320px;
+}
+
+.fichaLabel {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin-bottom: var(--space-1);
+}
+
+.fichaLista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.fichaPie {
+  margin-top: var(--space-2);
+  padding-top: var(--space-2);
+  border-top: 2px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.scrollHint {
+  position: absolute;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--amber-300);
+  border: 2.5px solid var(--line);
+  padding: 0.6em 1em;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0 0 var(--line);
+  animation: bob 2.2s var(--ease-out-quart) infinite;
+}
+
+.scrollHint:hover {
+  animation-play-state: paused;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scrollHint {
+    animation: none;
+  }
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: 1.3fr 0.9fr;
+    gap: var(--space-5);
+  }
+
+  .ficha {
+    justify-self: end;
+    margin-top: var(--space-2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .titulo {
+    font-size: clamp(4rem, 9vw, 6.5rem);
+  }
+}

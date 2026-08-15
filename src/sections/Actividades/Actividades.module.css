@@ -1,0 +1,95 @@
+.actividades {
+  padding-block: var(--space-6);
+  background: var(--lav-50);
+  border-bottom: var(--line-width) solid var(--line);
+}
+
+.titulo {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  max-width: 20ch;
+}
+
+.bajada {
+  margin-top: var(--space-2);
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  max-width: 50ch;
+  margin-bottom: var(--space-4);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.tarjeta {
+  text-align: left;
+  padding: var(--space-3);
+  background: var(--bg-paper-raised);
+  border: var(--line-width) solid var(--line);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 0 var(--line);
+  transition: transform var(--dur-base) var(--ease-out-quart),
+    box-shadow var(--dur-base) var(--ease-out-quart);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.tarjeta:hover {
+  transform: translate(-4px, -4px) rotate(-0.6deg);
+  box-shadow: calc(var(--shadow-offset) + 4px) calc(var(--shadow-offset) + 4px) 0 0 var(--line);
+}
+
+.tarjeta:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 0 var(--line);
+}
+
+.tarjetaNumero {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 2.5px solid var(--line);
+}
+
+.tarjeta--green .tarjetaNumero {
+  background: var(--green-300);
+}
+
+.tarjeta--blue .tarjetaNumero {
+  background: var(--blue-300);
+}
+
+.tarjeta--lav .tarjetaNumero {
+  background: var(--lav-300);
+}
+
+.tarjetaTitulo {
+  font-size: 1.4rem;
+  margin-top: 0.3em;
+}
+
+.tarjetaDescripcion {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.tarjetaCta {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-top: 0.4em;
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,57 @@
+.pagina {
+  min-height: 100svh;
+  background: var(--bg-paper);
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+.contenido {
+  max-width: 760px;
+}
+
+.volver {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: var(--bg-paper-raised);
+  border: 2.5px solid var(--line);
+  padding: 0.5em 1em;
+  margin-bottom: var(--space-4);
+  box-shadow: 3px 3px 0 0 var(--line);
+  transition: transform var(--dur-fast) var(--ease-out-quart);
+}
+
+.volver:hover {
+  transform: translate(-2px, -2px);
+}
+
+.titulo {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  margin-bottom: 0.4em;
+}
+
+.bajada {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  margin-bottom: var(--space-4);
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-left: 1.4em;
+}
+
+.item {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  padding-left: 0.3em;
+}
+
+.item::marker {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--green-500);
+}
