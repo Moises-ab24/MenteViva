@@ -79,9 +79,12 @@ export function Nav() {
           {secciones.map(({ id, label }) => (
             <button
               key={id}
-              className={styles.itemMovil}
+              className={`${styles.itemMovil} ${
+                activo === id ? styles.itemMovilActivo : ""
+              }`}
               onClick={() => irA(id)}
               role="menuitem"
+              aria-current={activo === id ? "true" : undefined}
             >
               {label}
             </button>
