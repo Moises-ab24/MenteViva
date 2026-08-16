@@ -12,8 +12,7 @@ export function Footer({ onAbrirFuentes }: FooterProps) {
         <div className={styles.bloque}>
           <p className={styles.marca}>Mente Viva</p>
           <p className={styles.desc}>
-            Manual de salud mental para jóvenes. Proyecto de Psicología, II
-            Período.
+            Manual de salud mental para jóvenes.
           </p>
         </div>
 
@@ -30,13 +29,13 @@ export function Footer({ onAbrirFuentes }: FooterProps) {
           <p className={styles.label}>Institución</p>
           <p className={styles.texto}>{institucion}</p>
           <button className={styles.linkFuentes} onClick={onAbrirFuentes}>
-            Ver fuentes bibliográficas →
+            Ver fuentes bibliográficas ⭢
           </button>
         </div>
       </div>
 
       <div className={styles.copy}>
-        <span>© 2026 Mente Viva. Proyecto académico, sin fines comerciales.</span>
+        <span>© 2026 Mente Viva. Todos los derechos reservados.</span>
       </div>
     </footer>
   );

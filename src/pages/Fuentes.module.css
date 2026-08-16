@@ -30,12 +30,6 @@
   margin-bottom: 0.4em;
 }
 
-.bajada {
-  color: var(--ink-soft);
-  font-size: 1.05rem;
-  margin-bottom: var(--space-4);
-}
-
 .lista {
   display: flex;
   flex-direction: column;

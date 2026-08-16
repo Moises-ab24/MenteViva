@@ -12,10 +12,10 @@ interface Tarea {
 type Cuadrante = "hacer" | "agendar" | "delegar" | "eliminar";
 
 const cuadrantes: { id: Cuadrante; titulo: string; ayuda: string }[] = [
-  { id: "hacer", titulo: "Hacé esto ya", ayuda: "Urgente e importante" },
-  { id: "agendar", titulo: "Agendalo", ayuda: "Importante, no urgente" },
-  { id: "delegar", titulo: "Delegalo o rapidito", ayuda: "Urgente, no importante" },
-  { id: "eliminar", titulo: "Eliminalo", ayuda: "Ni urgente ni importante" },
+  { id: "hacer", titulo: "Hacer esto ya", ayuda: "Urgente e importante" },
+  { id: "agendar", titulo: "Agendar", ayuda: "Importante, no urgente" },
+  { id: "delegar", titulo: "Delegar o rápido", ayuda: "Urgente, no importante" },
+  { id: "eliminar", titulo: "Eliminar", ayuda: "Ni urgente ni importante" },
 ];
 
 export function OrganizadorEstres() {
@@ -55,7 +55,7 @@ export function OrganizadorEstres() {
             setTexto(e.target.value);
             if (error) setError("");
           }}
-          placeholder="Ej: Estudiar para el examen de mate"
+          placeholder="Ej: Estudiar para el examen"
           maxLength={80}
           onKeyDown={(e) => e.key === "Enter" && agregar()}
         />

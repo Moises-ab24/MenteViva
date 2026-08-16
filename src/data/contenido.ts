@@ -14,11 +14,11 @@ export const equipo: Autor[] = [
 ];
 
 export const institucion = "C.T.P. San Rafael de Alajuela";
-export const periodo = "2026 · II Período";
+export const periodo = "II Período 2026";
 
 export const objetivos = {
   general:
-    "Brindar a jóvenes estudiantes información accesible y herramientas prácticas para el cuidado de su salud mental y bienestar emocional.",
+    "Brindar a jóvenes estudiantes información accesible y herramientas prácticas para el cuidado de su salud mental.",
   especificos: [
     "Explicar qué son las emociones y cómo manejarlas de forma saludable, identificando estrategias concretas para regularlas en situaciones cotidianas.",
     "Describir el impacto del estrés académico en los jóvenes y presentar técnicas organizativas para reducirlo sin afectar el rendimiento.",
@@ -45,17 +45,17 @@ export const temas: Tema[] = [
       {
         titulo: "¿Qué son las emociones y por qué importan?",
         texto:
-          "Las emociones son respuestas automáticas del cuerpo y la mente ante lo que vivimos. No son buenas ni malas por sí solas. El miedo te puede proteger. La rabia te puede decir que algo no está bien. La tristeza te puede ayudar a procesar pérdidas. El problema no es sentirlas, sino no saber qué hacer con ellas.\n\nSegún el psicólogo Paul Ekman, existen seis emociones básicas universales: alegría, tristeza, ira, miedo, sorpresa y asco. A partir de estas se construyen emociones más complejas como los celos, la vergüenza o la gratitud (Ekman, 1999). La rueda de las emociones de Robert Plutchik es otra herramienta muy usada para entender cómo se relacionan entre sí.",
+          "Las emociones son respuestas automáticas del cuerpo y la mente contra lo que vivimos. No son buenas ni malas. El miedo nos puede proteger. La ira nos puede decir que algo no está bien. La tristeza nos puede ayudar a procesar pérdidas. El problema no es sentirlas, sino no saber qué hacer con ellas.\n\nSegún el psicólogo Paul Ekman, existen seis emociones básicas universales: alegría, tristeza, ira, miedo, sorpresa y asco. A partir de estas se construyen emociones más complejas como los celos, la vergüenza o la gratitud.",
       },
       {
         titulo: "¿Qué pasa cuando no las gestionamos bien?",
         texto:
-          "Reprimir emociones tiene consecuencias reales. Suprimirlas de forma crónica se asocia con mayor riesgo de enfermedades cardiovasculares, peor memoria y mayor dificultad para tomar decisiones (Gross & John, 2003, citado en Harvard Health Publishing, 2021).\n\nEn jóvenes, la desregulación emocional se manifiesta de formas muy distintas: algunos se aíslan, otros reaccionan de forma exagerada, algunos recurren al celular como escape constante. Ninguna de esas cosas es un defecto de carácter. Son señales de que algo necesita atención.",
+          "Reprimir emociones tiene consecuencias. Suprimirlas se asocia con mayor riesgo de enfermedades cardiovasculares, peor memoria y mayor dificultad para tomar decisiones.\n\nEn jóvenes, la desregulación emocional se manifiesta de formas distintas: algunos se aíslan, otros reaccionan exageradamente, algunos recurren al celular como escape. Estas son señales de que algo necesita atención.",
       },
       {
         titulo: "Estrategias reales",
         texto:
-          "Nombrar lo que sentís (etiquetado emocional) reduce la actividad en la amígdala, la parte del cerebro responsable de las reacciones emocionales intensas — ponerle nombre lo hace menos abrumador (Lieberman et al., 2007).\n\nLa respiración diafragmática activa el sistema nervioso parasimpático, que calma el cuerpo. Probá la técnica 4-7-8: inhalá 4 segundos, sostené 7, exhalá 8.\n\nEscribir sobre lo que sentís, aunque sea unos minutos al día, se asocia con reducción de síntomas de ansiedad (Pennebaker & Chung, 2011). Hay una distancia entre sentir y reaccionar, y en esa distancia está la regulación emocional.",
+          "Nombrar lo que sentís reduce la actividad en la amígdala, la parte del cerebro responsable de las reacciones emocionales intensas.\n\nLa respiración diafragmática activa el sistema nervioso parasimpático, que calma el cuerpo. La técnica 4-7-8: inhalar 4 segundos, sostener 7 y exhalar 8.\n\nEscribir sobre lo que sentís reduce síntomas de ansiedad.",
       },
     ],
   },
@@ -63,23 +63,23 @@ export const temas: Tema[] = [
     id: "estres",
     numero: "02",
     titulo: "Estrés académico",
-    subtitulo: "Cuando el cole se come tu cabeza",
+    subtitulo: "Cuando el cole se come nuestra cabeza",
     color: "blue",
     bloques: [
       {
         titulo: "Qué es (y por qué es distinto al estrés normal)",
         texto:
-          "El estrés no es intrínsecamente malo. En dosis pequeñas activa la concentración. El problema es cuando se vuelve crónico, cuando el cuerpo está en alerta semana tras semana sin recuperarse.\n\nEl investigador Jesús Barraza Macías desarrolló el Inventario SISCO del Estrés Académico y encontró que entre el 67% y el 75% de los estudiantes latinoamericanos reportan niveles moderados a altos de estrés académico (Barraza, 2007). Síntomas frecuentes: dolores de cabeza, problemas para dormir, dificultad para concentrarse, irritabilidad.",
+          "El estrés no es malo. Muy poco puede activar la concentración. El problema es cuando se vuelve eterno, cuando el cuerpo está en estrés semana tras semana sin recuperarse.\n\nEl investigador Jesús Barraza Macías desarrolló el Inventario SISCO del Estrés Académico y encontró que entre el 67% y el 75% de los estudiantes latinoamericanos reportan niveles moderados a altos de estrés académico. Síntomas frecuentes: dolores de cabeza, problemas para dormir o dificultad para concentrarse.",
       },
       {
         titulo: "Por qué se siente tan agotador",
         texto:
-          "Una parte del problema es real: el sistema educativo exige mucho. Otra parte tiene que ver con cómo nos organizamos. Cuando todo parece urgente al mismo tiempo, el cerebro entra en modo supervivencia y la capacidad de pensar con claridad baja.\n\nLa investigadora Candice Odgers, de la Universidad de Duke, señala que los adolescentes hoy enfrentan una combinación de presiones académicas, sociales y digitales que generaciones anteriores no tuvieron simultáneamente (Odgers, 2018). No es que seamos más débiles. Es que el contexto es objetivamente más complejo.",
+          "Una parte del problema es real: el sistema educativo exige mucho. Otra parte tiene que ver con cómo nos organizamos. Cuando todo parece urgente, el cerebro entra en modo supervivencia y la capacidad de pensar con baja claridad.\n\nLa investigadora Candice Odgers, de la Universidad de Duke, señala que los jóvenes enfrentan presiones académicas, sociales y digitales que generaciones anteriores no tuvieron. No es debilidad, es el contexto que es más complejo.",
       },
       {
         titulo: "Estrategias que funcionan",
         texto:
-          "Técnica Pomodoro: 25 minutos de trabajo sin distracciones, 5 de descanso (Cirillo, 2018). Matriz de Eisenhower: dividir tareas entre urgente e importante para dejar de sentir que todo urge al mismo tiempo.\n\nDormir no es opcional. Un adolescente necesita entre 8 y 10 horas. La privación crónica de sueño aumenta el cortisol y deteriora la memoria (Walker, 2017). El movimiento físico reduce el cortisol y ayuda al cerebro a aprender más eficientemente, sin necesidad de que sea intenso (Ratey & Hagerman, 2008).",
+          "Técnica Pomodoro: 25 minutos de trabajo sin distracción, 5 de descanso. Matriz de Eisenhower: dividir tareas entre urgente e importante para dejar de sentir urgencia al mismo tiempo.\n\nDormir no es opcional. Se necesita entre 8 y 10 horas. No dormir bien aumenta el cortisol y daña la memoria. El ejercicio reduce el cortisol y ayuda al cerebro a aprender eficientemente.",
       },
     ],
   },
@@ -87,30 +87,30 @@ export const temas: Tema[] = [
     id: "redes",
     numero: "03",
     titulo: "Uso saludable de redes sociales",
-    subtitulo: "El scroll infinito y tu mente",
+    subtitulo: "El scroll infinito y nuestra mente",
     color: "lav",
     bloques: [
       {
         titulo: "La situación real",
         texto:
-          "El usuario promedio global pasa más de 6 horas al día frente a pantallas, y los adolescentes están por encima de ese promedio (We Are Social & Hootsuite, 2024). Las redes no son el enemigo: tienen beneficios reales, conexión, información, comunidades de apoyo. El problema es el uso que ocurre en piloto automático.",
+          "El usuario promedio pasa más de 6 horas al día frente a pantallas, y los jóvenes están por encima de ese promedio. Las redes no son el enemigo. El problema es el uso que les damos.",
       },
       {
         titulo: "Qué dice la investigación",
         texto:
-          "Un análisis de más de 350,000 adolescentes encontró que el uso de redes sociales tiene un efecto negativo en el bienestar, pero pequeño y comparable al de usar anteojos o comer papas (Orben & Przybylski, 2019). El efecto existe pero ha sido exagerado por medios.\n\nJonathan Haidt, en cambio, argumenta en The Anxious Generation que el giro hacia smartphones desde 2012 correlaciona con el aumento en depresión y ansiedad adolescente, sobre todo en chicas (Haidt, 2024). Lo consistente: el uso pasivo (scrollear sin interactuar) se asocia con peor ánimo; el uso activo (crear, conectar) tiene efectos neutros o positivos.",
+          "Un análisis de más de 350,000 adolescentes encontró que el uso de redes sociales tiene un efecto negativo en el bienestar, muy pequeño. El efecto existe pero ha sido exagerado por medios.\n\nJonathan Haidt, en cambio, argumenta en The Anxious Generation que el giro hacia smartphones desde 2012 se relaciona con el aumento en depresión y ansiedad, sobre todo en mujeres. Lo consistente: scrollear sin interactuar se asocia con peor ánimo; el uso activo tiene efectos neutros o positivos.",
       },
       {
         titulo: "Uso consciente vs. uso compulsivo",
         texto:
-          "La diferencia no está en cuánto tiempo usás. Está en si vos controlás el tiempo o el tiempo te controla a vos. Auditá tu tiempo de pantalla real, definí zonas sin celular, dejá de seguir cuentas que te hacen sentir mal, y priorizá crear sobre solo consumir.",
+          "La diferencia no está en cuánto tiempo se usa. Está en si controlamos el tiempo o el tiempo nos controla. Controlemos el tiempo de pantalla real y prioricemos crear en vez de solo consumir.",
       },
     ],
   },
 ];
 
 export const conclusion =
-  "Cuidar la salud mental no requiere que algo esté roto. No tenés que estar en crisis para prestarle atención a cómo estás emocionalmente.\n\nLo que sí requiere es honestidad con vos mismo, algo de información para entender qué te está pasando, y herramientas concretas para actuar. Eso intentamos hacer con este manual.\n\nLas tres áreas que cubrimos no son temas separados. Se afectan entre sí constantemente: un día de estrés alto te hace más vulnerable a las redes, las redes mal usadas amplifican las emociones difíciles, y las emociones no gestionadas aumentan la percepción de estrés. El ciclo va para los dos lados, lo que también significa que mejorar en uno tiene efecto positivo en los otros.\n\nSi algo de lo que leíste te resonó, ese es el punto de partida. No tenés que implementar todo a la vez.";
+  "Cuidar la salud mental no requiere que algo esté malo. No hay que estar en crisis para prestarle atención a cómo estamos emocionalmente.\n\nLo que sí se requiere es honestidad con uno mismo, algo de información para entender qué está pasando, y herramientas concretas para actuar.\n\nEstos no son temas separados. Se afectan entre sí constantemente: un día de estrés alto nos hace más vulnerable a las redes, las redes mal usadas aumentan las emociones difíciles, y las emociones no gestionadas aumentan la percepción de estrés. Significa que mejorar en uno tiene efecto positivo en los otros.\n\nSi algo de lo que leíste te gustó, ese es el punto de partida para empezar a cuidar tu salud mental.";
 
 export const fuentes: Fuente[] = [
   { cita: "Barraza Macías, A. (2007). El campo de estudio del estrés: del programa de investigación estímulo-respuesta al programa de investigación persona-entorno. Revista Internacional de Psicología, 8(2), 1–24." },

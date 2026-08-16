@@ -16,14 +16,10 @@ export function Fuentes({ onVolver }: FuentesProps) {
     >
       <div className={`container ${styles.contenido}`}>
         <button className={styles.volver} onClick={onVolver}>
-          ← Volver al manual
+          ⭠ Volver al manual
         </button>
 
         <h1 className={styles.titulo}>Fuentes bibliográficas</h1>
-        <p className={styles.bajada}>
-          Referencias en formato APA 7.ª edición usadas a lo largo del
-          manual.
-        </p>
 
         <ol className={styles.lista}>
           {fuentes.map((f) => (

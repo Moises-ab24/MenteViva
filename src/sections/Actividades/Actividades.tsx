@@ -16,21 +16,21 @@ const tarjetas = [
     id: "diario" as const,
     numero: "A",
     titulo: "Diario de emociones",
-    descripcion: "Nombrá lo que sentís hoy y por qué. Cuatro preguntas, dos minutos.",
+    descripcion: "Nombrá emociones que sentís hoy y por qué.",
     color: "green" as const,
   },
   {
     id: "organizador" as const,
     numero: "B",
     titulo: "Organizador anti-estrés",
-    descripcion: "Ordená tus pendientes en la matriz urgente / importante.",
+    descripcion: "Ordená los pendientes en formato urgente / importante.",
     color: "blue" as const,
   },
   {
     id: "test" as const,
     numero: "C",
     titulo: "Test de hábitos digitales",
-    descripcion: "5 preguntas para revisar tu relación real con las redes.",
+    descripcion: "5 preguntas para revisar la relación con las redes sociales.",
     color: "lav" as const,
   },
 ];
@@ -59,7 +59,7 @@ export function Actividades() {
           viewport={viewport}
           transition={{ duration: 0.5, delay: 0.1, ease }}
         >
-          Tres ejercicios cortos, uno por tema. Elegí uno y dale.
+          Tres ejercicios cortos, uno por tema.
         </motion.p>
 
         <div className={styles.grid}>
@@ -80,7 +80,7 @@ export function Actividades() {
               <span className={styles.tarjetaNumero}>{tarjeta.numero}</span>
               <h3 className={styles.tarjetaTitulo}>{tarjeta.titulo}</h3>
               <p className={styles.tarjetaDescripcion}>{tarjeta.descripcion}</p>
-              <span className={styles.tarjetaCta}>Empezar →</span>
+              <span className={styles.tarjetaCta}>Empezar ⭢</span>
             </motion.button>
           ))}
         </div>

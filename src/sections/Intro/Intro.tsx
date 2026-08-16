@@ -25,8 +25,8 @@ export function Intro() {
           viewport={viewport}
           transition={{ duration: 0.6, delay: 0.1, ease }}
         >
-          Hablar de salud mental todavía le incomoda a mucha gente. Se asume
-          que si no tenés un diagnóstico clínico, todo está bien.{" "}
+          Hablar de salud mental todavía incomoda a mucha gente. Se asume
+          que si no tenemos un diagnóstico clínico, todo está bien.{" "}
           <span className="brutal-marker">Pero no funciona así.</span>
         </motion.p>
 
@@ -39,8 +39,8 @@ export function Intro() {
         >
           La OMS define la salud mental como un estado de bienestar en el
           que cada persona puede desarrollar su potencial, hacer frente al
-          estrés normal de la vida, trabajar de forma productiva y
-          contribuir a su comunidad (OMS, 2022).
+          estrés de la vida, trabajar productivamente y
+          contribuir a su comunidad.
         </motion.p>
 
         <motion.p
@@ -50,10 +50,9 @@ export function Intro() {
           viewport={viewport}
           transition={{ duration: 0.6, delay: 0.3, ease }}
         >
-          Este manual lo escribimos pensando en jóvenes que están en la
-          misma situación que nosotros: lidiando con materias, redes
-          sociales, relaciones y presión familiar. No es un documento
-          clínico. Es una guía práctica con información real y actividades
+          Este manual piensa en jóvenes que están en la
+          misma situación que todos: luchando con materias, redes
+          sociales, relaciones y presión familiar. Esto es una guía práctica con información real y actividades
           concretas.
         </motion.p>
       </div>
