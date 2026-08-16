@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 import styles from "./OrganizadorEstres.module.css";
 
 interface Tarea {
@@ -21,7 +22,10 @@ export function OrganizadorEstres() {
   const [texto, setTexto] = useState("");
   const [cuadrante, setCuadrante] = useState<Cuadrante>("hacer");
   const [error, setError] = useState("");
-  const [tareas, setTareas] = useState<Tarea[]>([]);
+  const [tareas, setTareas] = useLocalStorage<Tarea[]>(
+    "mente-viva:organizador-estres",
+    []
+  );
 
   const agregar = () => {
     if (texto.trim().length === 0) {
@@ -35,6 +39,10 @@ export function OrganizadorEstres() {
 
   const quitar = (id: number) => {
     setTareas((prev) => prev.filter((t) => t.id !== id));
+  };
+
+  const borrarTodo = () => {
+    setTareas([]);
   };
 
   return (
@@ -72,6 +80,14 @@ export function OrganizadorEstres() {
         <p className={styles.error} role="alert">
           {error}
         </p>
+      )}
+
+      {tareas.length > 0 && (
+        <div className={styles.acciones}>
+          <button className={styles.borrar} onClick={borrarTodo}>
+            Borrar todo
+          </button>
+        </div>
       )}
 
       <div className={styles.matriz}>
