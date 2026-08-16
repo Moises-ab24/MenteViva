@@ -26,13 +26,21 @@
 }
 
 .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
   font-size: 1rem;
   font-weight: 600;
   padding: 0.5em 0.9em;
   background: var(--bg-paper);
   border: 2.5px solid var(--line);
+  color: var(--ink);
   transition: transform var(--dur-fast) var(--ease-out-quart),
     background var(--dur-fast) var(--ease-out-quart);
+}
+
+.chip svg {
+  flex-shrink: 0;
 }
 
 .chip:hover {
@@ -141,6 +149,9 @@
 }
 
 .entradaEmocion {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
   font-weight: 700;
   font-size: 0.95rem;
   color: var(--green-700);

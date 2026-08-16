@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
+import { IconoEmocion } from "./IconoEmocion";
 import styles from "./DiarioEmociones.module.css";
 
 interface Entrada {
@@ -10,12 +11,12 @@ interface Entrada {
 }
 
 const emociones = [
-  { nombre: "Alegría", emoji: "😊" },
-  { nombre: "Tristeza", emoji: "😔" },
-  { nombre: "Ira", emoji: "😤" },
-  { nombre: "Miedo", emoji: "😰" },
-  { nombre: "Calma", emoji: "😌" },
-  { nombre: "Ansiedad", emoji: "😬" },
+  "Alegría",
+  "Tristeza",
+  "Ira",
+  "Miedo",
+  "Calma",
+  "Ansiedad",
 ];
 
 export function DiarioEmociones() {
@@ -54,19 +55,20 @@ export function DiarioEmociones() {
     <div className={styles.diario}>
       <p className={styles.paso}>Paso 1 — ¿Qué emoción predominó hoy?</p>
       <div className={styles.emociones}>
-        {emociones.map((e) => (
+        {emociones.map((nombre) => (
           <button
-            key={e.nombre}
+            key={nombre}
             className={`${styles.chip} ${
-              seleccion === e.nombre ? styles.chipActivo : ""
+              seleccion === nombre ? styles.chipActivo : ""
             }`}
             onClick={() => {
-              setSeleccion(e.nombre);
+              setSeleccion(nombre);
               setError("");
             }}
-            aria-pressed={seleccion === e.nombre}
+            aria-pressed={seleccion === nombre}
           >
-            <span aria-hidden="true">{e.emoji}</span> {e.nombre}
+            <IconoEmocion nombre={nombre} size={20} />
+            {nombre}
           </button>
         ))}
       </div>
@@ -112,7 +114,10 @@ export function DiarioEmociones() {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
               >
-                <span className={styles.entradaEmocion}>{entrada.emocion}</span>
+                <span className={styles.entradaEmocion}>
+                  <IconoEmocion nombre={entrada.emocion} size={16} />
+                  {entrada.emocion}
+                </span>
                 <p className={styles.entradaTexto}>{entrada.detalle}</p>
               </motion.div>
             ))}
