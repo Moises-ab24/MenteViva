@@ -29,10 +29,10 @@ bibliográficas en formato APA 7.
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a1c9eab0-6403-4d48-8e06-99769e1072be" width="1300" height="600"/>
+  <img src="https://github.com/user-attachments/assets/5a456929-9ddf-4441-92b9-52206e61dbbd" width="1300" height="600"/>
   <img src="https://github.com/user-attachments/assets/803e6cae-5295-4cc2-bc78-3d28e48a2691" width="1300" height="600"/>
-  <img src="https://github.com/user-attachments/assets/926b838f-1dd4-4086-afd8-0d2e66ed8969" width="1300" height="600"/>
-  <img src="https://github.com/user-attachments/assets/b11cfc56-7ffe-4527-8a44-d2b3e9322adc" width="1300" height="600"/>
+  <img src="https://github.com/user-attachments/assets/51364627-d596-45ab-bcaf-d13b37bfa175" width="1300" height="600"/>
+  <img src="https://github.com/user-attachments/assets/ff9cfcc0-72f2-4207-a186-c83be91ea2a0" width="1300" height="600"/>
 </p>
 
 ## 🛠️ Stack
