@@ -108,7 +108,10 @@
   background: transparent;
   border: none;
   border-bottom: 2px solid var(--line);
+  border-left: 4px solid transparent;
   padding: var(--space-2);
+  transition: background var(--dur-fast) var(--ease-out-quart),
+    border-left-color var(--dur-fast) var(--ease-out-quart);
 }
 
 .itemMovil:last-child {
@@ -117,6 +120,15 @@
 
 .itemMovil:active {
   background: var(--green-50);
+}
+
+.itemMovilActivo {
+  background: var(--amber-300);
+  border-left-color: var(--line);
+}
+
+.itemMovilActivo:active {
+  background: var(--amber-300);
 }
 
 @media (min-width: 860px) {
