@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { fuentes } from "../data/contenido";
 import styles from "./Fuentes.module.css";
+import { ArrowLeft } from 'lucide-react';
 
 interface FuentesProps {
   onVolver: () => void;
@@ -16,7 +17,8 @@ export function Fuentes({ onVolver }: FuentesProps) {
     >
       <div className={`container ${styles.contenido}`}>
         <button className={styles.volver} onClick={onVolver}>
-          ⭠ Volver al manual
+          <ArrowLeft></ArrowLeft> 
+          Volver al manual
         </button>
 
         <h1 className={styles.titulo}>Fuentes bibliográficas</h1>

@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { equipo, institucion, periodo } from "../../data/contenido";
 import styles from "./Hero.module.css";
+import { ArrowDown } from 'lucide-react';
 
 export function Hero() {
   return (
     <section id="hero" className={styles.hero} aria-label="Portada">
-      <div className={styles.grano} aria-hidden="true" />
 
       <div className={`container ${styles.grid}`}>
         <div className={styles.columnaTexto}>
@@ -70,9 +70,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
           >
             <span>Empezar</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            <ArrowDown></ArrowDown>
           </motion.button>
         </div>
       </div>

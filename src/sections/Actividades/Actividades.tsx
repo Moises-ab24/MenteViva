@@ -5,6 +5,7 @@ import { DiarioEmociones } from "../../components/ActivityCard/DiarioEmociones";
 import { OrganizadorEstres } from "../../components/ActivityCard/OrganizadorEstres";
 import { TestRedes } from "../../components/ActivityCard/TestRedes";
 import styles from "./Actividades.module.css";
+import { ArrowRight } from "lucide-react";
 
 type ActividadId = "diario" | "organizador" | "test" | null;
 
@@ -14,21 +15,21 @@ const ease = [0.16, 1, 0.3, 1] as const;
 const tarjetas = [
   {
     id: "diario" as const,
-    numero: "A",
+    numero: "01",
     titulo: "Diario de emociones",
     descripcion: "Nombrá emociones que sentís hoy y por qué.",
     color: "green" as const,
   },
   {
     id: "organizador" as const,
-    numero: "B",
+    numero: "02",
     titulo: "Organizador anti-estrés",
     descripcion: "Ordená los pendientes en formato urgente / importante.",
     color: "blue" as const,
   },
   {
     id: "test" as const,
-    numero: "C",
+    numero: "03",
     titulo: "Test de hábitos digitales",
     descripcion: "5 preguntas para revisar la relación con las redes sociales.",
     color: "lav" as const,
@@ -80,7 +81,7 @@ export function Actividades() {
               <span className={styles.tarjetaNumero}>{tarjeta.numero}</span>
               <h3 className={styles.tarjetaTitulo}>{tarjeta.titulo}</h3>
               <p className={styles.tarjetaDescripcion}>{tarjeta.descripcion}</p>
-              <span className={styles.tarjetaCta}>Empezar ⭢</span>
+              <span className={styles.tarjetaCta}>Empezar <ArrowRight></ArrowRight></span>
             </motion.button>
           ))}
         </div>

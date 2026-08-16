@@ -51,6 +51,9 @@
 }
 
 .linkFuentes {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
   margin-top: 0.6em;
   align-self: flex-start;
   font-family: var(--font-mono);

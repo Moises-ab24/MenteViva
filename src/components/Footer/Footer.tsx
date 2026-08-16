@@ -1,5 +1,6 @@
 import { equipo, institucion } from "../../data/contenido";
 import styles from "./Footer.module.css";
+import { ArrowRight } from "lucide-react";
 
 interface FooterProps {
   onAbrirFuentes: () => void;
@@ -29,7 +30,7 @@ export function Footer({ onAbrirFuentes }: FooterProps) {
           <p className={styles.label}>Institución</p>
           <p className={styles.texto}>{institucion}</p>
           <button className={styles.linkFuentes} onClick={onAbrirFuentes}>
-            Ver fuentes bibliográficas ⭢
+            Ver fuentes bibliográficas <ArrowRight></ArrowRight>
           </button>
         </div>
       </div>

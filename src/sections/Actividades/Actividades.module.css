@@ -81,6 +81,9 @@
 }
 
 .tarjetaCta {
+  display: flex;
+  align-items: center;
+  gap: 0.1em;
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 0.9rem;
