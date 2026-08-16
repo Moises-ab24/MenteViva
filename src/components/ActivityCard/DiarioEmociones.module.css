@@ -98,13 +98,38 @@
   border-top: 2px dashed var(--line);
 }
 
+.historialHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: 0.6em;
+}
+
 .historialTitulo {
   font-family: var(--font-mono);
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin-bottom: 0.6em;
+}
+
+.borrar {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid var(--line);
+  padding: 0.3em 0.7em;
+  color: var(--ink-soft);
+  transition: background var(--dur-fast) var(--ease-out-quart),
+    color var(--dur-fast) var(--ease-out-quart);
+}
+
+.borrar:hover {
+  background: var(--coral-500);
+  color: var(--bg-paper-raised);
 }
 
 .entrada {

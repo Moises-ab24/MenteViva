@@ -50,6 +50,29 @@
   font-weight: 600;
 }
 
+.acciones {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.borrar {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid var(--line);
+  padding: 0.35em 0.8em;
+  color: var(--ink-soft);
+  transition: background var(--dur-fast) var(--ease-out-quart),
+    color var(--dur-fast) var(--ease-out-quart);
+}
+
+.borrar:hover {
+  background: var(--coral-500);
+  color: var(--bg-paper-raised);
+}
+
 .matriz {
   display: grid;
   gap: 0.7em;

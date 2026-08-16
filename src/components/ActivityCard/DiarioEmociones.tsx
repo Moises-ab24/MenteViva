@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 import styles from "./DiarioEmociones.module.css";
 
 interface Entrada {
@@ -21,7 +22,10 @@ export function DiarioEmociones() {
   const [seleccion, setSeleccion] = useState<string | null>(null);
   const [detalle, setDetalle] = useState("");
   const [error, setError] = useState("");
-  const [entradas, setEntradas] = useState<Entrada[]>([]);
+  const [entradas, setEntradas] = useLocalStorage<Entrada[]>(
+    "mente-viva:diario-emociones",
+    []
+  );
 
   const guardar = () => {
     if (!seleccion) {
@@ -40,6 +44,10 @@ export function DiarioEmociones() {
     setDetalle("");
     setSeleccion(null);
     setError("");
+  };
+
+  const borrarTodo = () => {
+    setEntradas([]);
   };
 
   return (
@@ -88,7 +96,12 @@ export function DiarioEmociones() {
 
       {entradas.length > 0 && (
         <div className={styles.historial}>
-          <p className={styles.historialTitulo}>Tu diario de hoy</p>
+          <div className={styles.historialHeader}>
+            <p className={styles.historialTitulo}>Tu diario</p>
+            <button className={styles.borrar} onClick={borrarTodo}>
+              Borrar todo
+            </button>
+          </div>
           <AnimatePresence initial={false}>
             {entradas.map((entrada) => (
               <motion.div
