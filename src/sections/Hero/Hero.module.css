@@ -23,10 +23,14 @@
 
 .grid {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-4);
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.columnaTexto {
+  display: flex;
+  flex-direction: column;
 }
 
 .eyebrow {
@@ -40,8 +44,8 @@
 }
 
 .titulo {
-  font-size: clamp(3.2rem, 15vw, 6rem);
-  line-height: 0.92;
+  font-size: clamp(3.6rem, 17vw, 6rem);
+  line-height: 0.9;
   letter-spacing: -0.03em;
   color: var(--ink);
 }
@@ -49,23 +53,30 @@
 .tituloAcento {
   color: var(--green-500);
   -webkit-text-stroke: 2px var(--line);
-  text-stroke: 2px var(--line);
+  text-shadow: 2px var(--line);
 }
 
 .bajada {
-  margin-top: var(--space-3);
+  margin-top: var(--space-2);
   max-width: 34ch;
   font-size: 1.15rem;
   line-height: 1.55;
   color: var(--ink-soft);
 }
 
+.columnaFicha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
 .ficha {
-  margin-top: var(--space-4);
   background: var(--bg-paper-raised);
   border: var(--line-width) solid var(--line);
   box-shadow: var(--shadow-offset) var(--shadow-offset) 0 0 var(--line);
   padding: var(--space-3);
+  width: 100%;
   max-width: 320px;
 }
 
@@ -103,9 +114,6 @@
 }
 
 .scrollHint {
-  position: absolute;
-  bottom: var(--space-3);
-  right: var(--space-3);
   display: flex;
   align-items: center;
   gap: 0.5em;
@@ -118,10 +126,12 @@
   text-transform: uppercase;
   box-shadow: 3px 3px 0 0 var(--line);
   animation: bob 2.2s var(--ease-out-quart) infinite;
+  transition: transform var(--dur-fast) var(--ease-out-quart);
 }
 
 .scrollHint:hover {
   animation-play-state: paused;
+  transform: translate(-2px, -2px);
 }
 
 @keyframes bob {
@@ -137,18 +147,39 @@
 
 @media (min-width: 720px) {
   .grid {
-    grid-template-columns: 1.3fr 0.9fr;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: var(--space-5);
   }
 
+  .columnaTexto {
+    flex: 1 1 auto;
+    max-width: 56%;
+  }
+
+  .columnaFicha {
+    flex: 0 0 auto;
+    align-items: stretch;
+    padding-top: var(--space-1);
+  }
+
   .ficha {
-    justify-self: end;
-    margin-top: var(--space-2);
+    max-width: 360px;
+    padding: var(--space-4);
+  }
+
+  .fichaLista {
+    font-size: 1.55rem;
+  }
+
+  .scrollHint {
+    align-self: flex-end;
   }
 }
 
 @media (min-width: 1024px) {
   .titulo {
-    font-size: clamp(4rem, 9vw, 6.5rem);
+    font-size: clamp(9.2rem, 8.5vw, 6.75rem);
   }
 }
