@@ -113,18 +113,13 @@ export const conclusion =
   "Cuidar la salud mental no requiere que algo esté malo. No hay que estar en crisis para prestarle atención a cómo estamos emocionalmente.\n\nLo que sí se requiere es honestidad con uno mismo, algo de información para entender qué está pasando, y herramientas concretas para actuar.\n\nEstos no son temas separados. Se afectan entre sí constantemente: un día de estrés alto nos hace más vulnerable a las redes, las redes mal usadas aumentan las emociones difíciles, y las emociones no gestionadas aumentan la percepción de estrés. Significa que mejorar en uno tiene efecto positivo en los otros.\n\nSi algo de lo que leíste te gustó, ese es el punto de partida para empezar a cuidar tu salud mental.";
 
 export const fuentes: Fuente[] = [
-  { cita: "Barraza Macías, A. (2007). El campo de estudio del estrés: del programa de investigación estímulo-respuesta al programa de investigación persona-entorno. Revista Internacional de Psicología, 8(2), 1–24." },
-  { cita: "Cirillo, F. (2018). The Pomodoro Technique: The acclaimed time-management system that has transformed how we work. Currency." },
-  { cita: "Ekman, P. (1999). Basic emotions. En T. Dalgleish & T. Power (Eds.), The handbook of cognition and emotion (pp. 45–60). John Wiley & Sons." },
-  { cita: "Gross, J. J., & John, O. P. (2003). Individual differences in two emotion regulation processes: Implications for affect, relationships, and well-being. Journal of Personality and Social Psychology, 85(2), 348–362." },
-  { cita: "Haidt, J. (2024). The anxious generation: How the great rewiring of childhood is causing an epidemic of mental illness. Penguin Press." },
-  { cita: "Harvard Health Publishing. (2021, marzo 8). Repressing emotions may be a health risk. Harvard Medical School. https://www.health.harvard.edu/mind-and-mood/repressing-emotions-may-be-a-health-risk" },
-  { cita: "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H., & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428." },
-  { cita: "Odgers, C. (2018). Smartphones are bad for some teens, not all. Nature, 554(7693), 432–434." },
-  { cita: "Organización Mundial de la Salud. (2022, junio 17). Salud mental: fortalecer nuestra respuesta. https://www.who.int/es/news-room/fact-sheets/detail/mental-health-strengthening-our-response" },
-  { cita: "Orben, A., & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182." },
-  { cita: "Pennebaker, J. W., & Chung, C. K. (2011). Expressive writing and its links to mental and physical health. En H. S. Friedman (Ed.), Oxford handbook of health psychology (pp. 417–437). Oxford University Press." },
-  { cita: "Ratey, J. J., & Hagerman, E. (2008). Spark: The revolutionary new science of exercise and the brain. Little, Brown and Company." },
-  { cita: "Walker, M. (2017). Why we sleep: Unlocking the power of sleep and dreams. Scribner." },
-  { cita: "We Are Social & Hootsuite. (2024). Digital 2024: Global overview report. https://wearesocial.com/global-digital-report" },
+  { cita: "Organización Mundial de la Salud. (2022). Salud mental. https://www.who.int/es/news-room/fact-sheets/detail/mental-health-strengthening-our-response" },
+  { cita: "Organización Mundial de la Salud. (2025). La salud mental de los adolescentes. https://www.who.int/es/news-room/fact-sheets/detail/adolescent-mental-health" },
+  { cita: "Berrío García, N., & Mazo Zea, R. (2011). Estrés académico. Revista de Psicología Universidad de Antioquia, 3(2), 65–82. https://pepsic.bvsalud.org/scielo.php?pid=S2145-48922011000200006&script=sci_arttext" },
+  { cita: "Orben, A., & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182. https://www.nature.com/articles/s41562-018-0506-1" },
+  { cita: "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H., & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428. https://doi.org/10.1111/j.1467-9280.2007.01916.x" },
+  { cita: "Martínez, E. S., & Díaz, D. A. (2007). Una aproximación psicosocial al estrés escolar. Educación y Educadores, 10(2), 11–22. https://educacionyeducadores.unisabana.edu.co/index.php/eye/article/view/687" },
+  { cita: "Jiménez-Boraita, R., Arriscado-Alsina, D., Dalmau-Torres, J. M., & Gargallo-Ibort, E. (2022). Factores asociados al sueño nocturno de los adolescentes. Pediatría Atención Primaria, 24(96), 375–384. https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S1139-76322022000400004" },
+  { cita: "Velez Sancarranco, M. A. (2025). Impacto de las redes sociales en la salud mental de adolescentes: Una revisión sistemática de la literatura. Universidad, Ciencia y Tecnología, 29(129), 86–94. https://ve.scielo.org/scielo.php?script=sci_arttext&pid=S1316-48212025000400086" },
+  { cita: "Universidad Pablo de Olavide. (2025). Método Pomodoro: planificación y gestión del tiempo. Biblioteca UPO. https://guiasbib.upo.es/planificacion-y-gestion-del-tiempo/metodo-pomodoro" },
 ];
